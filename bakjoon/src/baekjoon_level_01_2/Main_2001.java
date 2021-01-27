@@ -1,0 +1,19 @@
+package baekjoon_level_01_2;
+
+import java.util.Scanner;
+
+public class Main_2001 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int n1= sc.nextInt();
+		int n2= sc.nextInt();
+		
+		if(n1>n2)
+			System.out.println(">");
+		else if(n1<n2) 
+			System.out.println("<");
+		else
+			System.out.println("==");
+	}
+
+}
