@@ -5,15 +5,11 @@ public class Main_01 {
 	public static void main(String[]args) {
 		Scanner sc= new Scanner(System.in);
 		int a=sc.nextInt(),b=sc.nextInt(),c=sc.nextInt();
-		if(b-c>0) {
+		int gap=c-b;
+		if(gap<=0) {
 			System.out.print(-1);
 		}else {
-			int gap=b-c,BEP=0;
-			while(a>0) {
-				a-=gap;
-				BEP++;
-			}
-			System.out.print(BEP);
+			System.out.print(a/gap+1);
 		}
 	}
 }

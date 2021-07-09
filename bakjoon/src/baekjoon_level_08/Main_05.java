@@ -10,11 +10,16 @@ public class Main_05 {
 			h=sc.nextInt();
 			w=sc.nextInt();
 			n=sc.nextInt();
-			System.out.print(n%h);
-			if(n/h<10) {
-				System.out.println("0"+(n/h+1));
+			int ho=n/h+1;
+			int floor=n%h;
+			if(floor==0) {
+				floor=h;
+				ho--;
+			}
+			if(ho<10) {
+				System.out.println(floor+"0"+ho);
 			}else
-				System.out.println((n/h+1));
+				System.out.println(floor+""+ho);
 		}
 	}
 }
